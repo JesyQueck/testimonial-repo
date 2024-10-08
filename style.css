@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: barlow;
+}
+@font-face {
+    font-family: barlow;
+    src: url(BarlowSemiCondensed-Medium.ttf);
+}
+body{
+    min-height: 100vh;
+    place-content: center;
+    display: grid;
+}
+main{
+    background-color: hsl(0, 0%, 81%);
+    padding: 3rem;
+}
+.avatar{
+    width: 2.5rem;
+    border-radius: 50px;
+}
+figure{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+h1{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+span{
+    font-size: 0.8rem;
+    opacity: 50%;
+}
+p{
+    padding-top: 0.8rem;
+    font-weight: 500;
+    font-size: 0.889rem;
+    opacity: 70%;
+}
+.grid-col-span-2{
+    grid-column: span 2;
+}
+.container{
+    margin-inline: auto;
+    padding-block: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-width: (95%, 50rem);
+    gap: 2rem;
+}
+.imgsvg{
+    position: relative;
+}
+.svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.2;
+    transform: translate(50%, -25%);
+}
+.box1{
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 81%);
+    padding: 1.5rem;
+}
+.box2{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+}
+.box3{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+.box4{
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+}
+.box5{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    color: hsl(217, 19%, 35%);
+    padding: 1.5rem;
+    grid-column: 4;
+    grid-row: 1;
+    grid-row-end: span 2;
+}
+@media screen and (max-width:805px) {
+    .container{
+        display: block;
+    }
+    div{
+        margin: 2rem;
+    }
+    
+}
